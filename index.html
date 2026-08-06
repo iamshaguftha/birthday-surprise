@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Surprise Awaits</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+      <!-- ===========================
+        COUNTDOWN SCREEN
+    =========================== -->
+
+    <section id="countdown-screen">
+
+        <div class="countdown-card">
+
+            <h3 class="small-title">
+                Something special is waiting...
+            </h3>
+
+            <h1 class="count-title">
+                Your Birthday Surprise ❤️
+            </h1>
+
+            <p class="count-subtitle">
+                Every second brings you closer to something made with love.
+            </p>
+
+            <div class="countdown">
+
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <small>Days</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <small>Hours</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <small>Minutes</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <small>Seconds</small>
+                </div>
+
+            </div>
+
+            <p class="bottom-text">
+                Just a few more moments... ❤️
+                <br> <strong>07 August 2026 ❤️</strong>
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+            LOADING SCREEN
+    ========================== -->
+
+    <section id="loading-screen">
+
+        <div class="loading-card">
+
+            <div class="loading-heart">❤️</div>
+
+            <h1>Preparing Your Surprise...</h1>
+
+            <p id="loading-message">
+                Collecting beautiful memories...
+            </p>
+
+            <div class="progress-container">
+
+                <div id="progress-bar"></div>
+
+            </div>
+
+            <div id="progress-text">0%</div>
+
+            <div class="loading-status">
+
+                <p id="status-text">
+                    Please wait...
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="lock-screen">
+
+        <div class="card">
+
+            <div class="heart">❤️</div>
+
+            <h1>A Surprise Awaits</h1>
+
+            <p>
+                Enter our secret code to continue.
+            </p>
+
+            <div class="pin-dots">
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+   
+
+            </div>
+
+            <div class="keypad">
+
+                <button class="key">1</button>
+                <button class="key">2</button>
+                <button class="key">3</button>
+
+                <button class="key">4</button>
+                <button class="key">5</button>
+                <button class="key">6</button>
+
+                <button class="key">7</button>
+                <button class="key">8</button>
+                <button class="key">9</button>
+
+                <button class="key">⌫</button>
+                <button class="key">0</button>
+                <button class="key">✓</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================
+            PUZZLE INTRO
+    ========================== -->
+
+    <section id="puzzle-intro" style="display:none;">
+
+        <div class="card">
+
+            <div class="intro-icon">🧩</div>
+
+            <h1>One More Step...</h1>
+
+            <p class="intro-text">
+                Every beautiful memory is made of little moments.
+                <br><br>
+                Put them together and reveal one of ours. ❤️
+            </p>
+
+            <button id="start-puzzle-btn">
+                Begin
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Puzzle Screen -->
+    <section id="puzzle-screen" style="display:none;">
+
+        <div class="card">
+
+            <h1>🧩 unlock the puzzle </h1>
+
+            <p>
+                   Put the pieces together
+                   and reveal a piece of us. ❤️
+            </p>
+
+            <div id="puzzle-board">
+
+                <div id="pieces"></div>
+
+                <img
+                    id="final-image"
+                    src="images/puzzle.jpeg"
+                    alt="Final Image">
+
+            </div>
+
+            <div id="birthday-text">
+
+                <h1 id="typing-title"></h1>
+                <h2 id="typing-name"></h2>
+
+            </div>
+
+            <div id="sparkles">
+
+                ✨ ✨ ✨
+
+            </div>
+           
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================
+            ENVELOPE SCREEN
+    ========================== -->
+
+    <section id="envelope-screen">
+
+        <div class="card">
+
+            <div id="envelope-container">
+
+                <div id="envelope">
+
+                    <div class="flap"></div>
+
+                    <div class="letter-preview">
+                        💌
+                    </div>
+
+                </div>
+
+                <p class="letter-title">
+                    A Letter For You ❤️
+                </p>
+
+                <p id="open-text">
+                    Tap to Open
+                </p>
+
+            </div>
+
+            <div id="letter-peek"></div>
+
+        </div>
+
+    </section>
+
+
+    <section id="letter-screen">
+
+        <div class="paper">
+
+            <h1>My Dearest Jaan ❤️</h1>
+
+            <div id="letter-content"></div>
+           
+          
+
+            <button id="continue-btn">
+
+              Continue ❤️
+
+            </button>
+
+        </div>
+
+    </section>
+    <!-- ==========================
+            ENDING SCREEN
+    ========================== -->
+
+    <section id="ending-screen">
+
+          <div class="ending-card">
+
+              <div class="ending-heart">❤️</div>
+
+          
+              <h1>Happy Birthday, My Jaan</h1>
+
+              <p>
+                  Thank you for opening
+                  this little piece of my heart.❤️
+                  <br><br>
+                  I hope this tiny surprise made you smile.
+                  <br><br>
+                  May Allah bless you with endless happiness,
+                  good health, success and peace.
+                  <br><br>
+                  Happy Birthday, once again.
+
+                  ✨
+              </p>
+
+              <h2>Forever Yours,</h2>
+
+              <h3>Shakku ❤️</h3>
+
+          </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
