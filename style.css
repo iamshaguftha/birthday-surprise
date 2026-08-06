@@ -1194,8 +1194,9 @@ body::before{
     }
 
     .countdown-card{
-        width:100%;
-        padding:35px 22px;
+        width:95%;
+        max-width:420px;
+        padding:40px 25px;
     }
 
     .count-title{
@@ -1207,22 +1208,79 @@ body::before{
     }
 
     .countdown{
-        gap:10px;
+        grid-template-columns:repeat(2,1fr);
+        gap:16px;
     }
 
     .time-box{
-        width:65px;
-        height:65px;
+        width:100%;
+        min-height:110px;
+        padding:18px 10px;
+        border-radius:20px;
+    
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
     }
 
     .time-box span{
-        font-size:24px;
+        font-size:38px;
+        font-weight:700;
+    }
+        
+    .time-box small{
+        font-size:15px;
+        margin-top:4px;
     }
 
-}
+    .count-title{
+        font-size:30px;
+    }
+    
+    .count-subtitle{
+        font-size:16px;
+    }
+    
+    .bottom-text{
+        font-size:16px;
+    }
+    
+    }
 
 #envelope-screen .card{
     max-width:750px;
     width:95%;
     padding:60px 50px;
+}
+
+/* ==========================
+   LETTER - MOBILE
+========================== */
+
+@media (max-width:480px){
+
+    .paper{
+        width:95%;
+        min-height:auto;
+        padding:35px 22px;
+    }
+
+    .paper h1{
+        font-size:30px;
+        margin-bottom:25px;
+    }
+
+    #letter-content{
+        font-size:22px;
+        line-height:1.7;
+    }
+
+    #continue-btn{
+        width:100%;
+        padding:15px;
+        font-size:18px;
+        margin-top:30px;
+    }
+
 }
