@@ -423,9 +423,7 @@ envelope.addEventListener("click",()=>{
 
 });
 
-const letterText = `My Dearest Jaan ❤️
-
-Happy Birthday, idiot. 🎉💖
+const letterText = `Happy Birthday, idiot. 🎉💖
 
 Congratulations! 🥳
 You're officially one year closer to becoming an uncle. 👴😂
